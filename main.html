@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my movie</title>
+    <style>
+      body {
+        background-color: #ddffe6;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #000000;
+        padding: 20px;
+      }
+
+      video {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .upload-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #7dffa0;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+      }
+
+      .upload-button:hover {
+        background-color: #5ddf85;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>내 영화</h1>
+
+    <video width="400" height="225" controls>
+      <source src="sample.mp4" type="video/mp4" />
+      이 브라우저는 video 태그를 지원하지 않습니다.
+    </video>
+
+    <a href="up.html" class="upload-button">+ 영화 업로드</a>
+  </body>
+</html>
